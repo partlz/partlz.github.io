@@ -37,9 +37,9 @@ a  {
 
 .img {
   background: url(http://stayathome-syllabus.greenfox.academy/week01/assets/first-website-header.png);
-  /* background-size: cover; */
+  background-size: cover;
   background-position: center;
-  background-size: contain;
+  /* background-size: contain; */
   background-repeat: no-repeat;
   position: relative;
   width: 600px;
