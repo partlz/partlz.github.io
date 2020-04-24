@@ -1,127 +1,117 @@
 body {
-  margin: 0;
+    background-image: url('grey-background-07.jpg');
+    background-size: cover;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  
+.alltogether {
+    width: 1300px;
+    height: 600px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.header {
-  justify-content: center;
-  align-items: center;
-  background: #4d4d4d;
-  height: 150px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 58px;
+.photo-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
-a  {
-  text-decoration: none;
-  color: white;
-  margin: 30px;
+.gray-container {
+    /* border: 2px solid red; */
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 1200px;
+    height: 120px;
 }
 
-.header, .bio, .experience, .achievements, .training, .interests {
-  display: flex;
-  width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
+.gray-background {
+    /* border: 2px solid red; */
+    background-color: black;
+    opacity: 0.6;
+    width: 1200px;
+    height: 120px;
+    position: absolute;
 }
 
-.experience, .achievements, .training, .interests {
-  background: white;
+#photo-title, #photo-description {
+    margin-top: 20px;
+    padding-left: 15px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    position: relative;
 }
 
-.img {
-  background: url(http://stayathome-syllabus.greenfox.academy/week01/assets/first-website-header.png);
-  background-size: cover;
-  background-position: center;
-  /* background-size: contain; */
-  background-repeat: no-repeat;
-  position: relative;
-  width: 600px;
-  height: 800px;
+#photo-title {
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.intro {
-  background: white;
-  color: #222;
-  width: 900px;
-  font-size: 34px;
+#photo-description {
+    font-size: 15px;
+    opacity: 0.6;
 }
 
-h3, h4, h5, p, li {
-  font-family: 'Josefin Sans', sans-serif;
-  margin-left: 50px;
-  margin-right: 50px;
-  list-style-type: square;
-  line-height: 1.8;
+.arrow {
+    background-color:#d9d9d9;
+    border-radius: 2px;
+    width: 20px;
+    padding: 15px;
 }
 
-h2, h1 {
-  font-family: 'Abril Fatface', cursive;
-  color: #222;
-  position: absolute;
-  left: 200px;
+.arrow:hover {
+    opacity: 0.5;
 }
 
-h2 {
-  font-size: 60px;
-  top: 440px;
+.left {
+    box-shadow: -5px 10px 20px -15px #111;
+    /* box-shadow: 0px 6px 10px gray; */
 }
 
-h1 {
-  font-size: 100px;
-  top: 500px;
-  line-height: 1;
+.right {
+    transform: rotate(0.5turn);
+    box-shadow: -5px -10px 20px -15px #111;
+    /* box-shadow: 0px -6px 10px gray; */
 }
 
-.quote {
-  width: 600px;
+.current-photo {
+    width: 1200px;
+    height: 600px;
+    border-radius: 2px;
 }
 
-.text {
-  margin-top: 80px;
-  font-size: 30px;
-  width: 900px;
+.thumbnails-container {
+    /* border: 2px solid black; */
+    width: 1200px;
+    height: 100px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-h3 {
-  font-size: 50px;
-  text-transform: uppercase;
+ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h4 {
-  font-size: 40px;
-  margin-bottom: 0;
+li {
+    display: inline;
+    padding: 20px;
+    list-style-type: none;
 }
 
-h5 {
-  font-size: 30px;
-  font-family: 'Merriweather', serif;
-  font-style: italic;
-  margin-top: 0;
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    border: 5px solid white;
+    border-radius: 2px;
+    box-shadow: 0px 15px 10px -15px #111;
+    /* box-shadow: 0px 6px 10px -5px gray; */
 }
 
-blockquote {
-  font-family: 'Abril Fatface', cursive;
-  color: white;
-  background: #4d4d4d;
-  font-size: 90px;
-  padding: 80px;
-  position: relative;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-}
-
-blockquote::before {
-  content: "“";
-  position: absolute;
-  top: -72px;
-  left: 0;
-  font-size: 250px;
+.thumbnail:hover {
+    transform: scale(1.2);
 }
